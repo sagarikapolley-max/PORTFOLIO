@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+    color: #2d3436;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #1e3799;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fbc531;
+}
+
+
+section {
+    padding: 40px;
+    text-align: center;
+    background: white;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+#home {
+    background: #dff9fb;
+}
+
+
+.skill-box {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #c7ecee;
+    border-radius: 20px;
+}
+
+.skill-box:hover {
+    background: #22a6b3;
+    color: white;
+}
+
+
+.project {
+    background: #f6e58d;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.dark {
+    background: #2d3436;
+    color: white;
+}
+
+.dark nav {
+    background: black;
+}
+
+.dark section {
+    background: #3d3d3d;
+}
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav h2 {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .skill-box {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .project {
+        margin: 12px 0;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

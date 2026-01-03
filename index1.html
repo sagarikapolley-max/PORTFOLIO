@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="design1.css">
+</head>
+<body>
+
+<nav>
+    <h2>My Portfolio</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleMode()">Dark Mode</button>
+</nav>
+
+<section id="home">
+    <h1>Hi, I'm Sagarika</h1>
+    <p>Web Development Intern at <b>YCSAS</b></p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science student and a beginner web developer.
+        My goal is to become a skilled software engineer.
+        I joined the YCSAS Internship to gain real-world experience in web development.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Git</div>
+</section>
+
+<section id="internship">
+    <h2>YCSAS Internship</h2>
+    <p><b>Internship Name:</b> YCSAS Web Development Internship</p>
+    <p><b>Topics Learned:</b> HTML, CSS, JavaScript, Git</p>
+    <p><b>Experience:</b> Built projects, improved coding and problem-solving skills.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+         <h3>
+            Test Page for GitHub Upload
+            <a href="https://github.com/sagarikapolley-max/1ST_PROJECT" target="_blank">[GitHub_link]</a>
+        </h3>
+        <p>A simple test webpage created using HTML and CSS.</p>
+    </div>
+
+    <div class="project">
+          <h3>
+            Reference Website Clone
+            <a href="https://github.com/sagarikapolley-max/2ND_PROJECT" target="_blank">[GitHub_link]</a>
+        </h3>
+        <p>A website created using HTML and CSS by following a reference website.</p>
+    </div>
+
+    <div class="project">
+         <h3>
+            Registration Form
+            <a href="https://github.com/sagarikapolley-max/TEST_PROJECT" target="_blank">[GitHub_link]</a>
+        </h3>
+    </div>
+
+    <div class="project">
+        <h3>
+            To-Do List (Daily Task Planner)
+            <a href="https://github.com/sagarikapolley-max/3RD_PROJECT" target="_blank">[GitHub_link]</a>
+        </h3>
+        <p>A daily task planner using HTML, CSS & JavaScript.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <button type="submit">Send</button>
+    </form>
+    <p id="error"></p>
+</section>
+
+<script src="app1.js"></script>
+</body>
+</html>
+
